@@ -125,7 +125,7 @@ body{
 .work-title{
    font-weight: 600;
    font-size: 36px;
-   line-height: 0,9;
+   line-height: 0.9;
    text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
@@ -138,7 +138,7 @@ body{
 .team-title{
    font-weight: 600;
    font-size: 36px;
-   line-height: 0,9;
+   line-height: 0.9;
    text-align: center;
    letter-spacing: 0.02em;
    text-transform: capitalize;
@@ -164,6 +164,18 @@ body{
 #footer{
    background-color: #2E2F42; 
 }
+
+.logo-page{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height:0.85;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}       
 .logo-footer{
     font-family: 'Raleway';
     font-weight: 800;
@@ -174,18 +186,8 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
-    
 }
-.logo-page{
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 0.85;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    }
+
 .footer-text{
     font-weight: 400;
     font-size: 16px;

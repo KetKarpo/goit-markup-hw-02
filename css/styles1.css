@@ -3,6 +3,7 @@
     --color-main: #2E2F42;
     --color-accent: #4D5AE5;
     --color-btm: #F4F4FD;
+    --color-footer: #E7E9FC;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -69,28 +70,33 @@ body{
 }
 
 .btn {
+    font-family: inherit;
     font-weight: 500;
     line-height: 1.5;
     text-align: center;
     cursor: pointer;
     letter-spacing: 0.04em;
-    color: var(--color-accent);
-    background: var(--color-btm);
-    border: 1px solid #E7E9FC;
+    color: var(--color-light);
+    background: var(--color-accent);
+    border: 1px solid var(--color-footer);
     border-radius: 4px;
 }
-.btn-exl:focus
-.btn-exl:hover{
-    color: var(--color-light);  
+
+.click-btn:active{
+    color: var(--color-accent);
+    background: var(--color-btm); 
 }
-.btn:active{
-    background: var(--color-accent);
-    color: var(--color-light);
+.click-btn:hover
+.click-btn:focus{
+    color: #4D5AE5; 
+    background: var(--color-btm); 
 }
-  
+.item{
+    list-style: none;
+
+}
 .cells-item {
     background: var(--color-light);
-    border: 0.5px solid --color-btm;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .cells-info {
@@ -106,7 +112,7 @@ body{
     color: #434455;
 }
 
-.footer-block {
+.footer-section {
     background: var(--color-main);
 }
 .logo-footer{
@@ -124,10 +130,22 @@ body{
 .logo-beginer{
     color: var(--color-accent);
 }
+.footer-title{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .footer-page {
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color:var(--color-footer);
 }

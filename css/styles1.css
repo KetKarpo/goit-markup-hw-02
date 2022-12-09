@@ -1,7 +1,15 @@
+:root{
+    --color-light:#FFFFFF;
+    --color-main: #2E2F42;
+    --color-accent: #4D5AE5;
+    --color-btm: #F4F4FD;
+}
 body{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
-.list{
+.list,
+.cells-item{
     list-style: none;
 }
 .link{
@@ -9,131 +17,117 @@ body{
    text-decoration: none;
 }  
 .logo-web{
-    font-family: 'Raleway',sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height:0.75;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--color-accent);
 }
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 0.75x;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--color-main);
 }
 .header-link:hover,
 .header-phone:hover,
 .header-mail:hover{
-    color: #ff6c00;
+    color: var(--color-accent);
 }
 .header-link:focus,
 .header-mail:focus,
 .header-phone:focus{
-    color: #ff6c00;
+    color: var(--color-accent);
 }   
 
 .header-page {
-    background: #FFFFFF;
+    background: var(--color-light);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-link {
-    font-family: inherit;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 0.66;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-main);
 }
 .header-phone, .header-mail{
-    font-family: inherit;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
 .filter,.cells-title {
-    display: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
-.btn-exl{
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 0.66;
-    cursor: pointer;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #4D5AE5;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;  
-}
-.pointer {
-    }
+
 .btn {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 0.66;
+    line-height: 1.5;
     text-align: center;
     cursor: pointer;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background: #F4F4FD;
+    color: var(--color-accent);
+    background: var(--color-btm);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
 }
-
+.btn-exl:focus
+.btn-exl:hover{
+    color: var(--color-light);  
+}
+.btn:active{
+    background: var(--color-accent);
+    color: var(--color-light);
+}
+  
 .cells-item {
-    background: #FFFFFF;
-    border: 0.5px solid #F4F4FD;
+    background: var(--color-light);
+    border: 0.5px solid --color-btm;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .cells-info {
-    font-family: inherit;
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-main);
 }
 .additionall {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.cells-pg {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #F4F4FD;
-}
+
 .footer-block {
-    background: #2E2F42;
+    background: var(--color-main);
 }
 .logo-footer{
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 0.85;
+    line-height: 1.16;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #F4F4FD;
+    color: var(--color-btm);
+    
 }
+.logo-beginer{
+    color: var(--color-accent);
+}
+
 .footer-page {
-    font-family: inherit;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: #E7E9FC;
 }
